@@ -4,7 +4,14 @@
    --bgc: #2f303a;
    --l-s: 0.03em;
 }
-
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+   margin: 0;
+}
 body {
    font-family: "Roboto", sans-serif;
    color: var(--brend-color);
@@ -17,6 +24,26 @@ ul {
 a {
    text-decoration: none;
 }
+
+.cotener {
+   max-width: 1200px;
+   padding: 0 15px;
+   text-align: center;
+   margin: 0 auto;
+   outline: solid #bd0a0a;
+}
+.heder {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.heder a {
+   display: block;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
 .logo {
    font-family: "Raleway";
    font-weight: 700;
@@ -25,11 +52,22 @@ a {
    letter-spacing: 0.03em;
    color: var(--title-color);
 }
-/* ------------------nav-bar------------ */
+
 .logo > span {
    color: #2196f3;
 }
+/* ------------------nav-bar------------ */
 
+.list {
+   display: flex;
+}
+.adress {
+   display: flex;
+   margin-left: auto;
+}
+.nav {
+   margin-left: 93px;
+}
 .nav,
 .adress {
    font-weight: 500;
@@ -44,16 +82,27 @@ a {
 .nav-list a {
    color: var(--title-color);
 }
+.nav-list li:not(:last-child) {
+   padding-right: 50px;
+}
 
 .adress a {
    color: var(--brend-color);
+}
+.adress li:not(:first-child) {
+   margin-left: 50px;
 }
 /*----------------- hiro--------------- */
 .hiro {
    color: #ffffff;
    background: var(--bgc);
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 180px;
 }
+
 .hiro-title {
+   margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -75,7 +124,7 @@ a {
    cursor: pointer;
 }
 
-/* --------------section------------ */
+/* --------------section 1------------ */
 
 .visually-hidden {
    position: absolute;
@@ -89,7 +138,10 @@ a {
    clip-path: inset(50%);
    margin: -1px;
 }
-/* --------------section------------ */
+/* --------------section 2------------ */
+.list-img {
+   display: flex;
+}
 
 .list-title {
    color: var(--title-color);
@@ -101,7 +153,7 @@ a {
 .text {
    line-height: 1.7;
 }
-/* --------------section------------ */
+/* --------------section 3------------ */
 
 .section-title {
    color: var(--title-color);
@@ -110,6 +162,9 @@ a {
    line-height: 1.16;
    letter-spacing: var(--l-s);
    text-align: center;
+}
+.img-list {
+   display: flex;
 }
 
 .card h3 {
@@ -130,6 +185,9 @@ a {
 
 .futter {
    background-color: var(--bgc);
+}
+.futter .cotener {
+   text-align: start;
 }
 
 .futter .logo {
