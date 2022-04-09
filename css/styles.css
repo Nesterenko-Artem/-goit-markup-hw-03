@@ -11,6 +11,7 @@ h4,
 ul,
 p {
    margin: 0;
+   padding: 0;
 }
 body {
    font-family: "Roboto", sans-serif;
@@ -30,7 +31,7 @@ a {
    padding: 0 15px;
    text-align: center;
    margin: 0 auto;
-   outline: solid #bd0a0a;
+   /* outline: solid #bd0a0a; */
 }
 .heder {
    display: flex;
@@ -119,6 +120,15 @@ a {
    font-size: 16px;
    line-height: 1.9;
    letter-spacing: 0.06em;
+   display: inline-block;
+   padding: 10px 32px;
+   min-width: 200px;
+   min-height: 50px;
+
+   border: 1px solid transparent;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
 }
 .btn:hover {
    cursor: pointer;
@@ -138,7 +148,29 @@ a {
    clip-path: inset(50%);
    margin: -1px;
 }
+section {
+   background: #f5f4fa;
+}
+.list-section {
+   display: flex;
+   padding: 90px 0;
+}
+
+.list-section .items {
+   width: calc((100%-90px) / 4);
+   margin-right: 30px;
+}
+.list-section .items:last-child {
+   margin-right: 0;
+}
+.list-img {
+   padding-bottom: 94px;
+}
 /* --------------section 2------------ */
+.section-title {
+   margin-bottom: 50px;
+}
+
 .list-img {
    display: flex;
 }
@@ -148,6 +180,10 @@ a {
    font-weight: 700;
    letter-spacing: var(--l-s);
    text-transform: uppercase;
+}
+
+.list-img .item {
+   width: calc((100%-60px) / 3);
 }
 
 .text {
@@ -163,8 +199,15 @@ a {
    letter-spacing: var(--l-s);
    text-align: center;
 }
+.section-title.imag {
+   padding-top: 94px;
+}
 .img-list {
    display: flex;
+   padding-bottom: 94px;
+}
+.container {
+   padding: 30px 0;
 }
 
 .card h3 {
@@ -183,6 +226,19 @@ a {
    letter-spacing: var(--l-s);
 }
 
+div.card {
+   background: #ffffff;
+}
+.card {
+   width: calc((100%-90px) / 4);
+   margin-right: 30px;
+
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
+.card:last-child {
+   margin-right: 0;
+}
 .futter {
    background-color: var(--bgc);
 }
@@ -192,6 +248,9 @@ a {
 
 .futter .logo {
    color: #ffffff;
+   padding-top: 60px;
+   padding-bottom: 20px;
+   display: block;
 }
 
 .adress-item {
@@ -199,6 +258,9 @@ a {
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: var(--l-s);
+}
+.list-down {
+   padding-bottom: 60px;
 }
 
 .adress-item a {
