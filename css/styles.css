@@ -56,7 +56,7 @@ body {
    padding-bottom: 32px;
 }
 
-.nav-bar .logo {
+.logo {
    font-family: "Raleway";
    font-weight: 700;
    font-size: 26px;
@@ -217,6 +217,11 @@ section.unit {
 
 .list-img .item {
    width: calc((100%-60px) / 3);
+   margin-right: 30px;
+}
+
+.item:last-child {
+   margin-right: 0;
 }
 
 .text {
@@ -287,8 +292,9 @@ div.card {
 
 .futter .logo {
    color: #ffffff;
-   padding-bottom: 20px;
    display: block;
+   margin-bottom: 20px;
+   padding: 0;
 }
 
 .adress-item {
@@ -296,6 +302,9 @@ div.card {
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: var(--l-s);
+}
+.adress-item:not(:last-child) {
+   margin-bottom: 9px;
 }
 
 .adress-item a {
@@ -306,7 +315,7 @@ a[href*="https"] {
 }
 /* ------------------ portfolio------------------- */
 .btn-radio {
-   padding-top: 100px;
+   padding-top: 94px;
 }
 
 .btn-radio button {
@@ -355,12 +364,13 @@ a[href*="https"] {
    letter-spacing: 0.06em;
 }
 
-.title-card,
-.text {
+.desc {
    padding-left: 24px;
-}
-.text {
    padding-bottom: 20px;
+
+   background: #ffffff;
+
+   box-sizing: border-box;
 }
 
 button:hover,
@@ -383,13 +393,17 @@ button:focus {
    flex-wrap: wrap;
 }
 .grid-items {
+   display: block;
    width: calc((100% - 60px) / 3);
    margin-right: 30px;
    margin-bottom: 30px;
    background-color: #fff;
-   border-bottom: 1px solid #eeeeee;
+   /* border-bottom: 1px solid #eeee; */
    box-sizing: border-box;
    text-align: start;
+   border-right: 1px solid #eeeeee;
+   border-bottom: 1px solid #eeeeee;
+   border-left: 1px solid #eeeeee;
 }
 
 .grid-items:nth-child(3n) {
