@@ -367,15 +367,14 @@ a[href*="https"] {
 .desc {
    padding-left: 24px;
    padding-bottom: 20px;
-
    background: #ffffff;
-
    box-sizing: border-box;
 }
 
-button:hover,
-button:focus {
-   background-color: #2196f3;
+button.activ {
+   display: block;
+   text-align: center;
+   background: #2196f3;
    color: #ffffff;
    cursor: pointer;
    min-height: 38px;
