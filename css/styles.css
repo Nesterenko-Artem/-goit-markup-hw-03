@@ -29,39 +29,43 @@ body {
    font-family: "Roboto", sans-serif;
    color: var(--brend-color);
    font-size: 14px;
+   background-color: #fff;
    line-height: 1.5;
 }
 
 .cotener {
-   max-width: 1200px;
+   width: 1200px;
    padding: 0 15px;
-   text-align: center;
    margin: 0 auto;
    /* outline: solid #bd0a0a; */
 }
 
-.heder {
+.nav-bar {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #fff;
-   border: 1px solid #ECECEC;
+}
 
+.heder {
+   border: 1px solid #ececec;
 }
 
 .heder a {
    display: block;
-   padding-top: 20px;
-   padding-bottom: 20px;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 
-.logo {
+.nav-bar .logo {
    font-family: "Raleway";
    font-weight: 700;
    font-size: 26px;
    line-height: 1.2;
    letter-spacing: 0.03em;
    color: var(--title-color);
+
+   padding-top: 24px;
+   padding-bottom: 25px;
 }
 
 .logo > span {
@@ -99,7 +103,7 @@ body {
 }
 
 .nav-list li:not(:last-child) {
-   padding-right: 50px;
+   margin-right: 50px;
 }
 
 .adress a {
@@ -157,6 +161,10 @@ body {
 
 /* --------------section 1------------ */
 
+.section {
+   padding: 94px 0;
+}
+
 .bgc-greey {
    background-color: var(--bgc-body);
 }
@@ -187,6 +195,9 @@ body {
    margin-right: 0;
 }
 
+section.unit {
+   padding-top: 94px;
+}
 /* --------------section 2------------ */
 .section-title {
    margin-bottom: 50px;
@@ -201,6 +212,7 @@ body {
    font-weight: 700;
    letter-spacing: var(--l-s);
    text-transform: uppercase;
+   margin-bottom: 10px;
 }
 
 .list-img .item {
@@ -261,10 +273,6 @@ div.card {
 }
 .card:last-child {
    margin-right: 0;
-}
-
-.section {
-   padding: 94px 0;
 }
 
 .futter {
