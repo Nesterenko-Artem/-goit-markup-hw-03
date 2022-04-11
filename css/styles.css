@@ -316,7 +316,7 @@ a[href*="https"] {
 }
 /* ------------------ portfolio------------------- */
 .btn-radio {
-   padding:94px 0;
+   padding: 94px 0;
 }
 
 .btn-radio button {
@@ -331,7 +331,6 @@ a[href*="https"] {
 
    border: none;
    background-color: transparent;
-
 }
 .contener-btn {
    display: flex;
@@ -342,11 +341,11 @@ a[href*="https"] {
    margin: auto;
 }
 .btn-items button {
-      cursor: pointer;
-      min-height: 38px;
-      min-width: 73px;
-      background: #F5F4FA;
-      border-radius: 4px;
+   cursor: pointer;
+   min-height: 38px;
+   min-width: 73px;
+   background: #f5f4fa;
+   border-radius: 4px;
 }
 .btn-items:not(:last-child) {
    margin-right: 8px;
@@ -374,13 +373,21 @@ a[href*="https"] {
 }
 
 .desc {
-   padding:20px 24px;
+   padding: 20px 24px;
    background: #ffffff;
    border-right: 1px solid #eeeeee;
    border-bottom: 1px solid #eeeeee;
    border-left: 1px solid #eeeeee;
 }
+.desc .text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.9x;
 
+   letter-spacing: var(--l-s);
+
+   color: var(--brend-color);
+}
 button.activ {
    display: block;
    text-align: center;
@@ -410,7 +417,6 @@ button.activ {
    /* border-bottom: 1px solid #eeee; */
    box-sizing: border-box;
    text-align: start;
-   
 }
 
 .grid-items:nth-child(3n) {
