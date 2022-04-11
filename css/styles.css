@@ -257,6 +257,7 @@ section.unit {
    line-height: 1.18;
    text-align: center;
    letter-spacing: var(--l-s);
+   margin-bottom: 10px;
 }
 
 .card-text {
@@ -315,7 +316,7 @@ a[href*="https"] {
 }
 /* ------------------ portfolio------------------- */
 .btn-radio {
-   padding-top: 94px;
+   padding:94px 0;
 }
 
 .btn-radio button {
@@ -330,6 +331,7 @@ a[href*="https"] {
 
    border: none;
    background-color: transparent;
+
 }
 .contener-btn {
    display: flex;
@@ -339,9 +341,15 @@ a[href*="https"] {
    max-width: 612px;
    margin: auto;
 }
-
+.btn-items button {
+      cursor: pointer;
+      min-height: 38px;
+      min-width: 73px;
+      background: #F5F4FA;
+      border-radius: 4px;
+}
 .btn-items:not(:last-child) {
-   margin-right: 30px;
+   margin-right: 8px;
 }
 
 .image-card a {
@@ -362,13 +370,15 @@ a[href*="https"] {
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   margin-bottom: 4px;
 }
 
 .desc {
-   padding-left: 24px;
-   padding-bottom: 20px;
+   padding:20px 24px;
    background: #ffffff;
-   box-sizing: border-box;
+   border-right: 1px solid #eeeeee;
+   border-bottom: 1px solid #eeeeee;
+   border-left: 1px solid #eeeeee;
 }
 
 button.activ {
@@ -400,9 +410,7 @@ button.activ {
    /* border-bottom: 1px solid #eeee; */
    box-sizing: border-box;
    text-align: start;
-   border-right: 1px solid #eeeeee;
-   border-bottom: 1px solid #eeeeee;
-   border-left: 1px solid #eeeeee;
+   
 }
 
 .grid-items:nth-child(3n) {
